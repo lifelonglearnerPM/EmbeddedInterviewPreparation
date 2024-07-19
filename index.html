@@ -31,6 +31,7 @@
                     <li><a href="#test-frameworks">Test Frameworks</a></li>
                     <li><a href="#code-coverage">Code Coverage</a></li>
                     <li><a href="#opportunities">Different Opportunities in Embedded Systems</a></li>
+                    <li><a href="#advanced-topics">Advanced Topics</a></li>
                     <li><a href="#important-tools">Important Tools</a></li>
                     <li><a href="#links-roadmap">Links and Roadmap</a></li>
                 </ul>
@@ -65,17 +66,27 @@
                 <li>
                     <strong>Design Patterns:</strong>
                     <ul>
-                        <li>Singleton: Understand basic implementation and multi-threaded synchronization challenges.</li>
-                        <li>Factory Method: Explain its purpose and benefits.</li>
-                        <li>Proxy Pattern: Discuss its use cases.</li>
-                        <li>Observer Pattern: Explain how it facilitates communication between objects.</li>
+                        <li>Types of Design Patterns</li>
+                        <ul>
+                            <li><strong>Creational</strong></li>
+                            <li><strong>Structural</strong></li>
+                            <li><strong>Behavioural</strong></li>
+                        </ul>
+                        <ul> Common coding questions :
+                            <li>Singleton: Understand basic implementation and multi-threaded synchronization challenges.</li>
+                            <li>Factory Method: Explain its purpose and benefits.</li>
+                            <li>Observer Pattern: Explain how it facilitates communication between objects.</li>
+                            <li>Command Pattern: Discuss its use cases.</li>
+                        </ul>
                     </ul>
                 </li>
                 <li>
                     <strong>Multithreading:</strong>
                     <ul>
-                        <li>Understand concurrency concepts, synchronization mechanisms (mutexes and semaphores), and producer-consumer patterns.</li>
+                        <li>Understand concurrency concepts, synchronization mechanisms (mutexes and semaphores) 
+                        <li>Producer-consumer patterns</li>
                         <li>Be prepared to solve problems like sequence printing using multiple threads.</li>
+                        <li>Differences between mutex and semaphores</li>
                     </ul>
                 </li>
                 <li>Exception Handling: Be familiar with exception handling mechanisms in your preferred programming languages.</li>
@@ -86,9 +97,7 @@
                         <li> <a href="https://wiki.sei.cmu.edu/confluence/display/seccode/SEI+CERT+Coding+Standards">Secure Coding guidelines</a></li>
                     </ul>
                 </li>
-                <li>
-                    <li><a href="html/ipc.html"> Inter-Process Communication (IPC) and Intra Process Communication</a></li>
-                </li>
+                <li><a href="html/ipc.html"> Inter-Process Communication (IPC) and Intra Process Communication</a></li>
             </ul>
         </section>
 
@@ -99,6 +108,7 @@
                 <li>ROM (Read-Only Memory): Explain its usage for storing programs.</li>
                 <li>Flash Memory: Understand its properties and use cases in embedded systems.</li>
                 <li>Cache Memory: Explain the purpose and benefits of cache memory.</li>
+                <li>FPGA </li>
                 <li>DDR (Double Data Rate): Be familiar with DDR memory types and their advantages.</li>
             </ul>
         </section>
@@ -114,6 +124,7 @@
             <h2>GPIO (General Purpose Input/Output)</h2>
             <ul>
                 <li>Understand GPIO functionality and explain how to toggle a GPIO pin.</li>
+                <li>Using GPIO to interface with devices like Sensors and Actuators etc</li>
             </ul>
         </section>
 
@@ -123,6 +134,14 @@
                 <li>Bus Protocols: Familiarize yourself with common bus protocols (e.g., I2C, SPI, UART, CAN). Be prepared to discuss specific protocols like I2C, SPI, UART, RS232, I3C, SMBus, A2B.</li>
                 <li>Serial Protocols, Parallel Protocols, Multimedia Protocols, Communication Protocols, Automotive Protocols (CAN): Gain a general understanding of these protocols.</li>
             </ul>
+            <ul>
+                <li> Common terms</li>
+                <ul>
+                    <li>Bit Rate</li>
+                    <li>Data Rate</li>
+                    <li>Sample Rate</li>
+                </ul>
+            </ul>
         </section>
 
         <section id="rtos-concepts" class="container">
@@ -131,6 +150,7 @@
                 <li>Understand the concept of Real-Time Operating Systems (RTOS) and their role in embedded systems.</li>
                 <li>Be familiar with basic RTOS concepts like tasks, resources, devices and semaphores.</li>
                 <li>Explore various scheduling algorithms used in RTOS, such as Round Robin, Fixed Priority, and Earliest Deadline First (EDF).</li>
+                <li><strong>Stages of system bring up :</strong> Bootloaders etc</li>
             </ul>
         </section>
 
@@ -139,6 +159,12 @@
             <ul>
                 <li>Bare-metal: Understand the concept of bare-metal programming and examples like Contiki and FreeRTOS.</li>
                 <li>Micro-services: Gain a general understanding of the micro-services architecture and an example like QNX.</li>
+                <li> Master-Slave 
+                <ul>
+                    <li>Clock concepts </li>
+                    <li>Watchdog timer concepts </li>
+                </ul>
+                </li>
             </ul>
         </section>
 
@@ -159,7 +185,7 @@
         <section id="jtag" class="container">
             <h2>JTAG (Joint Test Action Group)</h2>
             <ul>
-                <li>Explain the purpose and usage of JTAG for debugging embedded systems.</li>
+                <li>Explain the purpose and usage of Serial Wire Debug (SWD) and JTAG for debugging embedded systems.</li>
             </ul>
         </section>
 
@@ -188,6 +214,20 @@
             <h2>Test Frameworks</h2>
             <ul>
                 <li>Be familiar with common embedded system test frameworks like CUnit and GTest.</li>
+                <li>Embedded Testing process :
+                <ul>
+                    <li> Unit testing</li>
+                    <li> Functional testing</li>
+                    <li> <strong>NonFunctional testing : </strong> like Performance testing, 
+                    usability testing, security testing, Stress testing and compatibility testing </li>
+                    <li> Regression testing</li>
+                    <li> Integration testing</li>
+                    <li> System testing</li>
+                    <li> Acceptance testing</li>
+                    <li> Blackbox testing</li>
+                    <li> Whitebox testing</li>
+                </ul>
+                </li>
             </ul>
         </section>
 
@@ -201,14 +241,48 @@
         <section id="opportunities" class="container">
             <h2>Different Opportunities in Embedded Systems</h2>
             <ul>
-                <li>Pure Hardware (VLSI design)</li>
+                <li>Pure Hardware (VLSI design, Hardware Description Language(HDL))</li>
                 <li>Firmware Development</li>
                 <li>Driver Development</li>
                 <li>Kernel Programming and Debugging</li>
+                <li>Compiler Programming</li>
+                <li>Power Management</li>
+                <li><strong>Connectivity</strong> Bluetooth, Ethernet, zigbee, LoRA etc</li>
                 <li>IoT</li>
                 <li>Multimedia</li>
                 <li>Automotive</li>
-                <li>Connectivity</li>
+            </ul>
+        </section>
+
+        <section id="advanced-topics" class="container">
+            <h2>Here are some advanced topics</h2>
+            <ul>
+                <li> Build and Project Collaboration Environment
+                <ul>
+                    <li> Yocto</li>
+                </ul>
+                </li>
+                <li> Code Management / Version Control
+                <ul>
+                    <li> GIT</li>
+                    <li> Perforce</li>
+                </ul>
+                </li>
+                <li> Embedded Machine Learning
+                <ul>
+                    <li> tinyML</li>
+                    <li> Edge AI</li>
+                </ul>
+                </li>
+                <li> Signal Processing
+                <ul>
+                    <li> Analog-to-Digital Conversion(ADC)</li>
+                    <li> Digital-to-Analog Conversion(DAC)</li>
+                    <li> <strong>Signal Conditioning :</strong> Techniques for filtering, amplifying, and preparing signals for processing.</li>
+                </ul>
+                </li>
+                <li> Firmware Over-The-Air (FOTA) Updates </li>
+                <li> Embedded Databases like sqlite </li>
             </ul>
         </section>
 
@@ -217,7 +291,7 @@
             <ul>
                 <li>Memory and Memory Map: valgrind</li>
                 <li>Code Debugging: GDB</li>
-                <li>Kernel Debugging: Kernel trace tools</li>
+                <li><strong>Kernel Debugging:</strong> Tools like ftrace and perf for tracing kernel events and analyzing performance bottlenecks.</li>
                 <li>Connectivity Protocols: Wireshark</li>
             </ul>
         </section>
