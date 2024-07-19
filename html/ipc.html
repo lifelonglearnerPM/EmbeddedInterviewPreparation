@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inter-Process Communication (IPC)</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Inter-Process Communication (IPC)</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Overview</h2>
+            <p>Inter-Process Communication (IPC) refers to mechanisms that allow different processes to communicate with each other. These mechanisms are crucial in operating systems for managing process interactions and ensuring efficient data sharing and synchronization.</p>
+        </section>
+
+        <section>
+            <h2>IPC Mechanisms</h2>
+            <ul class="mechanism-list">
+                <li><strong>Pipes:</strong> Provide a unidirectional or bidirectional communication channel between processes. Pipes are simple and effective for streaming data between processes.</li>
+                <li><strong>Message Queues:</strong> Allow processes to send and receive messages asynchronously. Useful for decoupling sender and receiver processes and handling message-based communication.</li>
+                <li><strong>Shared Memory:</strong> Enables multiple processes to access the same memory region. Provides high-speed data exchange but requires synchronization to avoid data corruption.</li>
+                <li><strong>Semaphores:</strong> Used for synchronization between processes to avoid race conditions. Semaphores control access to shared resources.</li>
+                <li><strong>Sockets:</strong> Provide communication over a network, allowing processes on different machines to exchange data. Useful for client-server architectures and distributed systems.</li>
+                <li><strong>Signals:</strong> Allow processes to send notifications or interrupts to each other. Useful for handling events and asynchronous notifications.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Inter-Process Communication (IPC) vs. Intra-Process Communication</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Aspect</th>
+                        <th>Inter-Process Communication (IPC)</th>
+                        <th>Intra-Process Communication</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Definition</td>
+                        <td>Mechanisms that allow different processes to communicate with each other.</td>
+                        <td>Mechanisms that allow communication between different parts or threads within the same process.</td>
+                    </tr>
+                    <tr>
+                        <td>Mechanisms</td>
+                        <td>Pipes, Message Queues, Shared Memory, Semaphores, Sockets, Signals</td>
+                        <td>Function Calls, Shared Memory, Local Variables, Threads Communication</td>
+                    </tr>
+                    <tr>
+                        <td>What it is</td>
+                        <td>IPC enables separate processes to exchange data.</td>
+                        <td>Intra-process communication allows different threads or components within a single process to exchange data.</td>
+                    </tr>
+                    <tr>
+                        <td>Why Use It</td>
+                        <td>To enable communication between independent processes, share data, or synchronize actions across processes.</td>
+                        <td>To facilitate efficient communication within the same process, avoiding process context switching overhead.</td>
+                    </tr>
+                    <tr>
+                        <td>How It Works</td>
+                        <td>IPC mechanisms work through various channels and synchronization methods.</td>
+                        <td>Intra-process communication works through function calls, shared memory access, and direct data manipulation.</td>
+                    </tr>
+                    <tr>
+                        <td>When to Use</td>
+                        <td>When processes need to communicate on the same machine or over a network.</td>
+                        <td>When multiple threads or components within a single process need to share data or synchronize.</td>
+                    </tr>
+                    <tr>
+                        <td>When Not to Use</td>
+                        <td>When processes do not need to communicate or when performance overhead is unacceptable.</td>
+                        <td>When processes need to communicate across boundaries or systems.</td>
+                    </tr>
+                    <tr>
+                        <td>Advantages</td>
+                        <td>Provides flexibility and isolation between processes. Useful for distributed systems.</td>
+                        <td>Faster communication with lower overhead. Simpler synchronization within a single process.</td>
+                    </tr>
+                    <tr>
+                        <td>Disadvantages</td>
+                        <td>Can have performance overhead due to context switching and data copying. Requires careful management of synchronization.</td>
+                        <td>Limited to communication within a single process. May face challenges with resource contention.</td>
+                    </tr>
+                    <tr>
+                        <td>Scalability</td>
+                        <td>Suitable for large-scale distributed systems requiring communication between separate processes.</td>
+                        <td>Limited to the context of a single process; does not address scalability beyond that scope.</td>
+                    </tr>
+                    <tr>
+                        <td>Complexity</td>
+                        <td>More complex due to managing process interactions and synchronization across boundaries.</td>
+                        <td>Less complex, involving direct function calls or shared memory access.</td>
+                    </tr>
+                    <tr>
+                        <td>Overhead</td>
+                        <td>Higher due to context switching, data serialization, and network latency.</td>
+                        <td>Lower, with minimal overhead from direct memory access and function calls.</td>
+                    </tr>
+                    <tr>
+                        <td>Use Cases</td>
+                        <td>Client-server architectures, distributed applications, networked games.</td>
+                        <td>Multi-threaded applications, GUI applications, real-time data processing.</td>
+                    </tr>
+                    <tr>
+                        <td>Synchronization</td>
+                        <td>Use of semaphores, mutexes, or other IPC synchronization mechanisms.</td>
+                        <td>Use of mutexes, condition variables, or atomic operations for thread synchronization.</td>
+                    </tr>
+                    <tr>
+                        <td>Security</td>
+                        <td>IPC requires additional security measures to ensure data confidentiality and integrity.</td>
+                        <td>Less concern within a single process but still important for thread safety.</td>
+                    </tr>
+                    <tr>
+                        <td>Error Handling</td>
+                        <td>Requires robust error handling for communication failures or data corruption.</td>
+                        <td>Focuses on thread synchronization issues and shared resource management.</td>
+                    </tr>
+                    <tr>
+                        <td>Performance Considerations</td>
+                        <td>Can be affected by context switching, data copying, and network latency.</td>
+                        <td>Generally faster due to less overhead and no need for context switching.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>
