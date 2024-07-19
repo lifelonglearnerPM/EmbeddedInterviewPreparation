@@ -89,3 +89,27 @@ footer {
     width: 100%;
     border-top: #77aaff 3px solid;
 }
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    header nav {
+        float: none;
+    }
+
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}
