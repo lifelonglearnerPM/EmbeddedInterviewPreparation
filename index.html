@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Concepts Interview Preparation</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Embedded Concepts Interview Preparation</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#programming-concepts">Programming Concepts</a></li>
+                    <li><a href="#hardware-memory">Hardware Memory</a></li>
+                    <li><a href="#hardware-interrupts">Hardware Interrupts and ISR</a></li>
+                    <li><a href="#gpio">GPIO</a></li>
+                    <li><a href="#protocols">Protocols</a></li>
+                    <li><a href="#rtos-concepts">RTOS Concepts</a></li>
+                    <li><a href="#architecture">Architecture</a></li>
+                    <li><a href="#assembly-language">Very Basics of Assembly Language</a></li>
+                    <li><a href="#arm-optimization">ARM Optimization</a></li>
+                    <li><a href="#jtag">JTAG</a></li>
+                    <li><a href="#soc">System-on-Chip (SoC)</a></li>
+                    <li><a href="#microprocessor">Microprocessor</a></li>
+                    <li><a href="#c-program-execution">C Program Execution</a></li>
+                    <li><a href="#test-frameworks">Test Frameworks</a></li>
+                    <li><a href="#code-coverage">Code Coverage</a></li>
+                    <li><a href="#opportunities">Different Opportunities in Embedded Systems</a></li>
+                    <li><a href="#important-tools">Important Tools</a></li>
+                    <li><a href="#links-roadmap">Links and Roadmap</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="programming-concepts" class="container">
+        <h2>Programming Concepts</h2>
+        <ul>
+            <li>
+                <strong>Memory Layout:</strong> Understand the memory organization for different languages (C/C++, Java, Python, Rust, JavaScript)
+                <ul>
+                    <li>Pointers and References: Grasp the concepts of word length, memory addresses, and their differences in various programming languages.</li>
+                    <li>volatile: Be prepared to explain the <code>volatile</code> keyword and its use in embedded systems.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Linked List:</strong>
+                <ul>
+                    <li>Implement and explain common linked list operations like:</li>
+                    <ul>
+                        <li>Fast and slow pointer method</li>
+                        <li>Loop detection</li>
+                        <li>Intersection point finding</li>
+                        <li>Reversal</li>
+                        <li>Summation of two linked lists</li>
+                    </ul>
+                </ul>
+            </li>
+            <li>
+                <strong>Design Patterns:</strong>
+                <ul>
+                    <li>Singleton: Understand basic implementation and multi-threaded synchronization challenges.</li>
+                    <li>Factory Method: Explain its purpose and benefits.</li>
+                    <li>Proxy Pattern: Discuss its use cases.</li>
+                    <li>Observer Pattern: Explain how it facilitates communication between objects.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Multithreading:</strong>
+                <ul>
+                    <li>Understand concurrency concepts, synchronization mechanisms (mutexes and semaphores), and producer-consumer patterns.</li>
+                    <li>Be prepared to solve problems like sequence printing using multiple threads.</li>
+                </ul>
+            </li>
+            <li>Exception Handling: Be familiar with exception handling mechanisms in your preferred programming languages.</li>
+            <li>Secure Coding Guidelines: Understand and explain secure coding practices for embedded systems.</li>
+            <li>
+                <strong>Inter-Process Communication (IPC):</strong> 
+                <ul>
+                    <li>Explain different IPC mechanisms like shared memory, sockets (Unix sockets), message queues, and event notification.</li>
+                </ul>
+            </li>
+            <li>Intra-Process Communication (RPC): Understand the concept of Remote Procedure Call (RPC) and its variants like gRPC.</li>
+        </ul>
+    </section>
+
+    <section id="hardware-memory" class="container">
+        <h2>Hardware Memory</h2>
+        <ul>
+            <li>RAM (Random Access Memory): Understand its characteristics and role in embedded systems.</li>
+            <li>ROM (Read-Only Memory): Explain its usage for storing programs.</li>
+            <li>Flash Memory: Understand its properties and use cases in embedded systems.</li>
+            <li>Cache Memory: Explain the purpose and benefits of cache memory.</li>
+            <li>DDR (Double Data Rate): Be familiar with DDR memory types and their advantages.</li>
+        </ul>
+    </section>
+
+    <section id="hardware-interrupts" class="container">
+        <h2>Hardware Interrupts and ISR (Interrupt Service Routine)</h2>
+        <ul>
+            <li>Explain how hardware interrupts work and the concept of ISRs.</li>
+        </ul>
+    </section>
+
+    <section id="gpio" class="container">
+        <h2>GPIO (General Purpose Input/Output)</h2>
+        <ul>
+            <li>Understand GPIO functionality and explain how to toggle a GPIO pin.</li>
+        </ul>
+    </section>
+
+    <section id="protocols" class="container">
+        <h2>Protocols</h2>
+        <ul>
+            <li>Bus Protocols: Familiarize yourself with common bus protocols (e.g., I2C, SPI, UART, CAN). Be prepared to discuss specific protocols like I2C, SPI, UART, RS232, I3C, SMBus, A2B.</li>
+            <li>Serial Protocols, Parallel Protocols, Multimedia Protocols, Communication Protocols, Automotive Protocols (CAN): Gain a general understanding of these protocols.</li>
+        </ul>
+    </section>
+
+    <section id="rtos-concepts" class="container">
+        <h2>RTOS Concepts</h2>
+        <ul>
+            <li>Understand the concept of Real-Time Operating Systems (RTOS) and their role in embedded systems.</li>
+            <li>Be familiar with basic RTOS concepts like tasks, scheduling, and semaphores.</li>
+        </ul>
+    </section>
+
+    <section id="architecture" class="container">
+        <h2>Architecture</h2>
+        <ul>
+            <li>Bare-metal: Understand the concept of bare-metal programming and examples like Contiki and FreeRTOS.</li>
+            <li>Micro-services: Gain a general understanding of the micro-services architecture and an example like QNX.</li>
+        </ul>
+    </section>
+
+    <section id="assembly-language" class="container">
+        <h2>Very Basics of Assembly Language</h2>
+        <ul>
+            <li>Have a basic understanding of assembly language concepts and instructions.</li>
+        </ul>
+    </section>
+
+    <section id="arm-optimization" class="container">
+        <h2>ARM Optimization</h2>
+        <ul>
+            <li>Understand the basics of ARM optimization techniques for embedded systems.</li>
+        </ul>
+    </section>
+
+    <section id="jtag" class="container">
+        <h2>JTAG (Joint Test Action Group)</h2>
+        <ul>
+            <li>Explain the purpose and usage of JTAG for debugging embedded systems.</li>
+        </ul>
+    </section>
+
+    <section id="soc" class="container">
+        <h2>System-on-Chip (SoC)</h2>
+        <ul>
+            <li>Understand the concept of SoCs and their integration of various components on a single chip.</li>
+        </ul>
+    </section>
+
+    <section id="microprocessor" class="container">
+        <h2>Microprocessor</h2>
+        <ul>
+            <li>Explain the basic functionalities of a microprocessor.</li>
+        </ul>
+    </section>
+
+    <section id="c-program-execution" class="container">
+        <h2>C Program Execution</h2>
+        <ul>
+            <li>Describe the basic steps involved in executing a C program.</li>
+        </ul>
+    </section>
+
+    <section id="test-frameworks" class="container">
+        <h2>Test Frameworks</h2>
+        <ul>
+            <li>Be familiar with common embedded system test frameworks like CUnit and GTest.</li>
+        </ul>
+    </section>
+
+    <section id="code-coverage" class="container">
+        <h2>Code Coverage</h2>
+        <ul>
+            <li>Understand the concept of code coverage and its importance in testing.</li>
+        </ul>
+    </section>
+
+    <section id="opportunities" class="container">
+        <h2>Different Opportunities in Embedded Systems</h2>
+        <ul>
+            <li>Pure Hardware (VLSI design)</li>
+            <li>Firmware Development</li>
+            <li>Driver Development</li>
+            <li>Kernel Programming and Debugging</li>
+            <li>IoT</li>
+            <li>Multimedia</li>
+            <li>Automotive</li>
+            <li>Connectivity</li>
+        </ul>
+    </section>
+
+    <section id="important-tools" class="container">
+        <h2>Important Tools</h2>
+        <ul>
+            <li>Memory and Memory Map: valgrind</li>
+            <li>Code Debugging: GDB</li>
+            <li>Kernel Debugging: Kernel trace tools</li>
+            <li>Connectivity Protocols: Wireshark</li>
+        </ul>
+    </section>
+
+    <section id="links-roadmap" class="container">
+        <h2>Links and Roadmap</h2>
+        <ul>
+            <li><a href="https://inpyjama.com">inpyjama.com</a>: Explore this website for embedded systems resources.</li>
+            <li><a href="https://youtu.be/eeZvn1l_EQY">Embedded Systems Fundamentals Course (YouTube)</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Embedded Concepts Interview Preparation. All rights reserved. Copy not allowed.</p>
+            <p>Disclaimer: This guide is not associated or affiliated with any of the recommended institutions, organizations, links, or groups.</p>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
