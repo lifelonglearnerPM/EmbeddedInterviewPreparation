@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bit Operations in Programming</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bit Operations in Programming</h1>
+    </header>
+    <main>
+        <section>
+            <h2> Bit operations Importance</h2>
+            <ul>
+                <li><strong>Optimization : </strong>  Bit operations can be used to optimize certain algorithms by reducing the number of operations or memory accesses.</li>
+                <li><strong>Compression and decompression : </strong> Bit operations can be used to efficiently compress and decompress data.</li>
+                <li><strong>Cryptography : </strong> Bit operations are commonly used in cryptographic algorithms for encryption and decryption.</li>
+                <li><strong>Embedded systems and low-level programming : </strong> Bit operations are essential for working with hardware registers and device drivers in embedded systems.</li>
+            </ul>
+        </section>
+        <section>
+            <table>
+                <tr>
+                    <th>Bit Operation</th>
+                    <th>Intention</th>
+                    <th>Code Example</th>
+                    <th>Operation Example</th>
+                    <th>When to Use</th>
+                </tr>
+                <tr>
+                    <td>AND (<code>&amp;</code>)</td>
+                    <td>Combine bits</td>
+                    <td><code>int result = a &amp; b;</code></td>
+                    <td><code>5 &amp 3(binary: 101 &amp 011 = 001, which is 1 </code></td>
+                    <td>- Masking bits to extract specific information</td>
+                </tr>
+                <tr>
+                    <td>OR (<code>|</code>)</td>
+                    <td>Set bits</td>
+                    <td><code>int result = a | b;</code></td>
+                    <td><code>5 | 3(binary: 101 | 011 = 111, which is 7 </code></td>
+                    <td>- Setting specific bits</td>
+                </tr>
+                <tr>
+                    <td>XOR (<code>^</code>)</td>
+                    <td>Toggle bits</td>
+                    <td><code>int result = a ^ b;</code></td>
+                    <td><code>5 ^ 3(binary: 101 ^ 011 = 110, which is 6 </code></td>
+                    <td>- Toggle bits between two values</td>
+                </tr>
+                <tr>
+                    <td>NOT (<code>~</code>)</td>
+                    <td>Invert bits</td>
+                    <td><code>int result = ~a;</code></td>
+                    <td><code>~5(binary: ~101 = 010, which is -6 in two's complement)</code></td>
+                    <td>- Creating the bitwise complement of a number or Flipping bits or checking if a value is zero</td>
+                </tr>
+                <tr>
+                    <td>Left Shift (<code>&lt;&lt;</code>)</td>
+                    <td>Shift bits left</td>
+                    <td><code>int result = a &lt;&lt; n;</code></td>
+                    <td><code>5 &lt;&lt; 1(binary: 101 &lt;&lt; 1 = 1010, which is 10)</code></td>
+                    <td>- Multiplying a number by powers of 2</td>
+                </tr>
+                <tr>
+                    <td>Right Shift (<code>&gt;&gt;</code>)</td>
+                    <td>Shift bits right (arithmetic)</td>
+                    <td><code>int result = a &gt;&gt; n;</code></td>
+                    <td><code>5 &gt;&gt; 1(binary: 101 &gt;&gt; 1 = 10, which is 2)</code></td>
+                    <td>- Dividing a number by powers of 2</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h2> Common Pitfalls</h2>
+            <ul>
+                <li> <strong> Datatype of input, Signed vs. Unsigned Integers : </strong>
+                <p>Check if the datatype of the values are guaranteed to be binary representation</p>
+                <p>Using signed integers can lead to unexpected results when performing bitwise shifts, particularly right shifts, which may introduce sign bits. Always be cautious about the type of integers being manipulated.</p>
+                </li>
+                <li> <strong>Neglecting Edge Cases :</strong>
+                <p>Failing to account for edge cases, such as zero or negative numbers, can lead to incorrect results. For example, using bitwise operations on negative numbers can yield unexpected behavior due to two's complement representation.</p>
+                <p> </p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>Author : <a href="https://github.com/lifelonglearnerPM">lifelonglearnerPM</a> </p>
+            <p>&copy; Embedded Concepts Interview Preparation. All rights reserved. Copy not allowed.</p>
+            <p>Disclaimer: This guide is not associated or affiliated with any of the recommended institutions, organizations, links, or groups.</p>
+        </div>
+    </footer>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

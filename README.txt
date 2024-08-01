@@ -1,3 +1,5 @@
+I dedicate this repo to my mentors who believed in me, shared their knowledge, trusted me with deliverables , gave me challenges so that I can learn and improve.
+
 This repository is still under progress, since it covers many topics.
 
 Add to yourselves to watchlist so that you can be notified if there are any updates.
